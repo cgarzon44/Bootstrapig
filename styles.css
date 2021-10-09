@@ -1,1 +1,73 @@
 
+
+/* Feed Body */
+ .feedheader{ 
+    background-color:white;
+    z-index: 1;
+    width:500px;
+    height: 50px;
+    margin: auto;
+    display:block;
+    
+
+
+}
+
+.feedbody{
+    background-color: white;
+    width: 500px;
+    z-index: 1;
+    margin: auto;
+
+}
+
+
+.Img_feed{
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin: auto;
+    margin-top: 0;
+      
+}
+
+
+
+/* fonts */
+h1{
+    text-align: center;
+    padding-right: 175px;
+    font-family: fantasy;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.Titles{
+    float: left;
+    padding-left: 10px;
+
+
+}
+.Dates{
+float: right;
+color: lightgray;
+padding-right: 10px;
+}
+
+.Comments{
+    background-color: white;
+    width: 500px;
+    margin:auto;
+    Height: 50px;
+    text-align: center;
+    Padding-top:20px;
+    margin-bottom: 30px;
+
+}
+
+.modal-backdrop {
+    /* bug fix - no overlay */    
+    display: none;    
+}

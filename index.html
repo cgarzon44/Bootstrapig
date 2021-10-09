@@ -9,49 +9,214 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/fc9e5b8943.js" crossorigin="anonymous"></script>
     <title>Document</title>
+    <!-- Css style -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-      <div>
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-          <img src="https://www.pikpng.com/pngl/b/116-1162446_follow-us-on-social-media-instagram-logo-font.png" width="100" height="30" alt="">
-        </a>
-        <li class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
- <i class="fas fa-cog"></i>
-      <div class="dropdown-menu">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
+
+  <!-- Top Navbar w/ modal & drop down-->
+<div class = "container fixed-top" >
+ <nav class="navbar navbar-light bg-light">
+      <div class="container">
+
+
+     <!-- Instagram Logo -->   
+        <a class="navbar-brand" href="#">
+          <img src="https://www.pikpng.com/pngl/b/116-1162446_follow-us-on-social-media-instagram-logo-font.png" width="130" height="30" alt="">
+        </a>
+        
+    
+        
+ <!-- Button trigger modal -->
+          <ul class="navbar-nav ml-auto" style=" padding:10px">
+              <li class="nav-item active">
+                  <a class="nav-link" href="#">
+                      <button class="btn btn-success"type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Create a new post</button>
+                   </a>
+              </li>
+         </ul>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+<textarea id="w3review" name="w3review" rows="5" cols="53">
+
+</textarea>
+<br>
+ <button type ="button"><i class="fas fa-camera"></i></button>
+ <button type ="button"><i class="fas fa-map-marker-alt"></i></i></i></button>
+      </div>
+      <div class="modal-footer">
+       
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-success">Publish</button>
+      </div>
+    </div>
+  </div>
+</div>
+       
+<!-- Drop down toggle -->
+        <div>
+        <li class="dropdown-toggle btn-group" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-cog"></i>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
     <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="#">Separated link</a>
+       <a class="dropdown-item" href="#">Log Out</a>
   </div>
         </li>
 
 
 
- 
-      </nav>
+      </div>
+     </nav>
 
 
-
-
-     
-
+    
 
 </div>
 
 
+<!-- Bottom Nav bar w/ Switch toogle  -->
+
+<div>
+  <ul class="nav nav-pills d-flex justify-content-center" style=" margin-top:100px" a>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#home"><i class="fas fa-th"></i></a></li>
+    </li>
+
+
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#menu1"><i class="fas fa-image"></i>
+      </a></li></a>
+    </li>
+   
+  </ul>
+  </div>
+
+<!-- Gallery & Photo feed switch forms -->
+  <div class="tab-content">
+
+      <!-- Gallery View -->
+    <div id="home" class= "tab-pane fade show active" >
+      <form >
+<!-- Col 1 -->
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/golden-retriever-royalty-free-image-506756303-1560962726.jpg?crop=0.672xw:1.00xh;0.166xw,0&resize=640:*" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col">
+              <img src="https://infatuation.imgix.net/media/images/guides/best-pizza-miami/MerrittSmail_Miami_EleventhStreetPizza_Food-19.jpg?auto=format&h=890&w=1336" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col">
+              <img src="https://media.istockphoto.com/photos/funny-winking-kitten-picture-id1267021092?b=1&k=20&m=1267021092&s=170667a&w=0&h=xEUavzJGm_q1qAI3EOounDK_8ZfGe3RK9slrykGz1z0=" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col">
+              <img src="https://www.readersdigest.ca/wp-content/uploads/2017/10/funny-photos-llama.jpg" class="img-fluid" alt="Responsive image">
+        
+            </div>
+          </div>
+        </div>
+      
+      <!-- Col2 -->
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <img src="https://4.bp.blogspot.com/-o1lCPHDxXZE/UYOpeaKIHVI/AAAAAAAAG38/6v8eQUxetpA/s1600/tumblr_ml2bjx1cc21r7y03eo1_400.gif" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col">
+              <img src="https://img.delicious.com.au/WqbvXLhs/del/2016/06/more-the-merrier-31380-2.jpg" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col">
+              <img src="https://rockymountevents.com/wp-content/uploads/2018/09/birthday_celebration.jpg" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col">
+              <img src="https://i.ytimg.com/vi/yvb7qJaDzzQ/maxresdefault.jpg" class="img-fluid" alt="Responsive image">
+            </div>
+          </div>
+        </div>
+      
+      
+      <!-- Col 3 -->
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <img src="https://i.guim.co.uk/img/media/7c2ab1a3e60e445caf0a4d3de302591e830e8f7f/0_0_3800_2280/master/3800.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=49331bc571155fab736c3ce179f31770" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col">
+              <img src="https://culturecrusaders.com/wp-content/uploads/2019/08/Miami-Water-Sports_Parasail.jpg" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col">
+              <img src="https://i.pinimg.com/originals/8a/8f/07/8a8f07c4c49a56b8b05fb5f3b9768ec1.gif" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col">
+              <img src="https://www.miamistronggym.com/hosted/images/9a/daf5cda71f481bbc7d557393f8067d/Image-from-iOS-16-.jpg" class="img-fluid" alt="Responsive image">
+            </div>
+          </div>
+        </div>
+        
+      </form>
+    </div>
 
 
 
+<!-- Photo feed View -->
+    <div id="menu1" class="tab-pane fade">
 
+    <form>
 
+      <!-- Photot one -->
+        <div class="feedheader">
+         <div>
+          <strong> <p class="Titles">
+            My First Photo
+            </p></strong> 
+            <p class="Dates">12/14</p>
+        </div>
+            <img class= Img_feed src=https://dogsbestlife.com/wp-content/uploads/2020/05/English-bulldog-scaled.jpeg> 
+            <p class="Comments">This is my first photo of the feed. this is a muti line comment for testing purposes. I am learning to code with <strong>#Breathcode</strong></p>
+        <br>
 
+        <div class="feedheader">
+         <div>
+          <strong> <p class="Titles">
+                Some Cute Thing
+            </p></strong> 
+            <p class="Dates">12/17</p>
+        </div>
+            <img class= Img_feed src=https://baddogsinc.com/wp-content/uploads/2016/12/sbdog1.jpg"> 
+            <p class="Comments">The internet approves this cute dog...<strong>#Breathcode</strong></p>
+       
+
+        
+        <div class="feedheader"></div>
+         <div>
+          <strong> <p class="Titles">
+                And of Course... Food!
+            </p></strong> 
+            <p class="Dates">12/17</p>
+        </div>
+            <img class= Img_feed src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg"> 
+            <p class="Comments">Because no photo feed is cool without some food on it! <strong>#Breathcode</strong></p>
+        </div>
+      </form>
+
+  </div>
+  
+</div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
   </body>
 </html>
